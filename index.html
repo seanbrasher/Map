@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<TITLE>Conclave at Palachin</TITLE>
+	<style>
+	.container {
+	  position: relative;
+		width: 100%;
+		max-width: 100%;
+	}
+	.image {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
+	.overlay {
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  top: 0;
+	}
+	</style>
+</HEAD>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function toggler(buttonId, showCaption, hideCaption, imgId)
+{
+	if(document.getElementById(buttonId).value == showCaption)
+	{
+		document.getElementById(buttonId).value = hideCaption;
+		document.getElementById(imgId).style.display = 'block';
+	}
+	else
+	{
+		document.getElementById(buttonId).value = showCaption;
+		document.getElementById(imgId).style.display = 'none';
+	}	
+}
+//-->
+</SCRIPT>
+<BODY>
+<div>
+	<input type="button" id="toggleBlast" value="Show Blast Radius" onclick="toggler('toggleBlast', 'Show Blast Radius', 'Hide Blast Radius', 'rangeBlastRadius');">
+	<input type="button" id="toggleMedium" value="Show Medium Ranges" onclick="toggler('toggleMedium', 'Show Medium Ranges', 'Hide Medium Ranges', 'rangeGridMedium');">
+	<input type="button" id="toggleShort" value="Show Short Ranges" onclick="toggler('toggleShort', 'Show Short Ranges', 'Hide Short Ranges', 'rangeGridShort');">
+	<input type="button" id="toggleTiv" value="Show Tiv Ranges" onclick="toggler('toggleTiv', 'Show Tiv Ranges', 'Hide Tiv Ranges', 'rangeTivSniper');">
+	<input type="button" id="toggleHutts" value="Show Hutts" onclick="toggler('toggleHutts', 'Show Hutts', 'Hide Hutts', 'peopleHutts');">
+	<input type="button" id="toggleImperials" value="Show Imperials" onclick="toggler('toggleImperials', 'Show Imperials', 'Hide Imperials', 'peopleImperials');">
+	<input type="button" id="togglePCs" value="Show PCs" onclick="toggler('togglePCs', 'Show PCs', 'Hide PCs', 'peoplePCs');">
+	<input type="button" id="toggleLabels" value="Show Labels" onclick="toggler('toggleLabels', 'Show Labels', 'Hide Labels', 'labels');">
+</div>
+<div class="container">
+	<div id="Terrain"><img src="Terrain.png" class="image"></div>
+	<div class="overlay" id="rangeBlastRadius" style="display:none;"><img src="Range Blast Radius.png" class="image"></div>
+	<div class="overlay" id="rangeGridMedium" style="display:none;"><img src="Range Grid Medium.png" class="image"></div>
+	<div class="overlay" id="rangeGridShort" style="display:none;"><img src="Range Grid Short.png" class="image"></div>
+	<div class="overlay" id="rangeTivSniper" style="display:none;"><img src="Range Tiv Sniper.png" class="image"></div>
+	<div class="overlay" id="peopleHutts" style="display:none;"><img src="People-Hutts.png" class="image"></div>
+	<div class="overlay" id="peopleImperials" style="display:none;"><img src="People-Imperials.png" class="image"></div>
+	<div class="overlay" id="peoplePCs" style="display:none;"><img src="People-PCs.png" class="image"></div>
+	<div class="overlay" id="labels" style="display:none;"><img src="Labels.png" class="image"></div>
+</div>  
+</BODY>
+</HTML>
